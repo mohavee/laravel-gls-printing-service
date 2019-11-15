@@ -1,0 +1,14 @@
+{
+    "name": "peterszelepcsenyi/laravel-gls-printing-service",
+    "description": "GLS printing labels service for Laravel framework.",
+    "authors": [
+        {
+            "name": "Peter Szelepcsenyi",
+            "email": "peter@szelepcsenyi.net"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "orchestra/testbench": "^3.8"
+    }
+}
