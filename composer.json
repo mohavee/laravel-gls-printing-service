@@ -1,5 +1,5 @@
 {
-    "name": "peterszelepcsenyi/laravel-gls-printing-service",
+    "name": "webidentity/laravel-gls-printing-service",
     "description": "GLS printing labels service for Laravel framework.",
     "authors": [
         {
@@ -7,8 +7,29 @@
             "email": "peter@szelepcsenyi.net"
         }
     ],
-    "require": {},
+    "require": {
+    },
     "require-dev": {
         "orchestra/testbench": "^3.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webidentity\\GLSPrintingService\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Webidentity\\GLSPrintingService\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webidentity\\GLSPrintingService\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
     }
 }
