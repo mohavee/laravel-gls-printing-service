@@ -19,7 +19,7 @@ class ServiceProvider extends \Illuminate\Support\ServiceProvider
             return new GLSPrintingService(
                 new ApplicationServices([
                     'trace' => 1
-                ], config('gls-printing-service.soap-urls.' . config('gls-printing-service.url'))),
+                ], config('gls-printing-service.soap-urls.' . config('gls-printing-service.url')) ?? 'SK'),
                 app(config('gls-printing-service.logger')),
                 config('gls-printing-service.log-http-communication')
             );

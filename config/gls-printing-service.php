@@ -16,7 +16,7 @@ return [
         'A4_4x1' => 'A4 format, 4 labels on layout 4x1',
     ],
     'url' => 'SK',
-    'soap_urls' => [
+    'soap-urls' => [
         'HU' => 'https://online.gls-hungary.com/webservices/soap_server.php?wsdl',
         'SK' => 'http://online.gls-slovakia.sk/webservices/soap_server.php?wsdl',
         'CZ' => 'http://online.gls-czech.com/webservices/soap_server.php?wsdl',
